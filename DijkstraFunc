@@ -1,0 +1,15 @@
+#define INF 65535;
+#include <iostream>;
+
+int n;//节点数
+int m;//边数
+
+/*
+    输入形式如下
+    n,m
+    i,j
+    i,j
+*/
+ int main(void){
+     
+ }
