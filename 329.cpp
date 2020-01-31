@@ -7,7 +7,7 @@ char str[100][100],rem[100];
 
 int t1[]={-1,-1,-1,0,0,1,1,1};
 int t2[]={-1,0,1,-1,1,-1,0,1};
-int len,m,n;
+int length,m,n;
 
 void Rever(int row,int col,int ans)
 {
@@ -29,7 +29,7 @@ int Action(int row,int col)
             Rever(row,col,ans);
             if(row<0 || col<0 || row>=m || col>=n || str[row][col]!=rem[ans]) break;
             {
-                if(ans==len-1) return 1;
+                if(ans==length-1) return 1;
                 ans++;
                 row+=t1[i];col+=t2[i];
             }
@@ -56,7 +56,7 @@ int main()
         for (k=0;k<x;k++)
         {
             scanf("%s",rem);
-            len=strlen(rem);
+            length=strlen(rem);
             for (i=0;i<m;i++)
             {
                 for (j=0;j<n;j++)
